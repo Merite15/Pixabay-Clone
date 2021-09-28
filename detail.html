@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- police -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Detail</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="logo">
+          <a href="../index.html"> Pixabay</a>
+          <div class="recherche">
+            <i class="fas fa-search"></i>
+            <input type="text" name="search" id="search" />
+            <select name="plat" id="plat">
+              <option value="1">Photos</option>
+              <option value="2">Illustrations</option>
+              <option value="3">Vecteurs</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="client">
+          <a href="#popup1">Connexion</a>
+          <div id="popup1" class="overlay">
+            <div class="popup">
+              <h2>Se connecter</h2>
+              <a class="close" href="#">&times;</a>
+              <div class="content-popup">
+                <div>
+                  <i class="fab fa-google ggl-color fa-2x"></i>
+                  <p>Continuer avec google</p>
+                </div>
+                <div>
+                  <i class="fab fa-facebook fb-color fa-2x"></i>
+                  <p>Continuer avec facebook</p>
+                </div>
+                <form>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="username"
+                  />
+                  <input
+                    type="password"
+                    name="pwd"
+                    id="pwd"
+                    placeholder="password"
+                  />
+                  <button>Connexion</button>
+
+                  <p class="cdt">Reinitialiser son mot de passe</p>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <a href="#popup2">Rejoindre</a>
+          <div id="popup2" class="overlay">
+            <div class="popup">
+              <h2>S'enregistrer</h2>
+              <a class="close" href="#">&times;</a>
+              <div class="content-popup">
+                <div>
+                  <i class="fab fa-google ggl-color fa-2x"></i>
+                  <p>Continuer avec google</p>
+                </div>
+                <div>
+                  <i class="fab fa-facebook fb-color fa-2x"></i>
+                  <p>Continuer avec facebook</p>
+                </div>
+                <form>
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="ton nom d'utilisateur"
+                  />
+                  <input
+                    type="text"
+                    name="email"
+                    id="email"
+                    placeholder="ton email"
+                  />
+                  <input
+                    type="password"
+                    name="pwd"
+                    id="pwd"
+                    placeholder="mot de passe"
+                  />
+                  <button>Rejoindre</button>
+
+                  <p class="cdt">
+                    En vous abonnant à Pixabay, vous acceptez nos Conditions
+                    générales.
+                  </p>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <a class="download" href="#popup2">
+            <i class="fas fa-download"></i>Telecharger
+          </a>
+        </div>
+      </nav>
+    </header>
+
+    <section class="details-img">
+      <div>
+        <img
+          src="./img/gallery/1.jpg"
+          alt="fluers"
+          class="image"
+          title="fluers"
+        />
+        <div class="comments">
+          <i class="fas fa-user fa-2x"></i>
+          <input
+            type="text"
+            name="comment"
+            id="comment"
+            placeholder="ajouter un commentaire"
+          />
+        </div>
+        <div class="commentaire">
+          <img
+            src="./img/artiste/04-52-02-869_250x250.webp"
+            width="50px"
+            alt="user"
+            title="user"
+          />
+          <div>
+            <div>
+              <h3><a href="#"> Etienne</a></h3>
+              <p>22 mai 2021</p>
+            </div>
+            <p>Super fond d'ecran</p>
+          </div>
+        </div>
+        <div class="commentaire">
+          <img
+            src="./img/artiste/04-52-02-869_250x250.webp"
+            width="50px"
+            alt="user"
+            title="user"
+          />
+          <div>
+            <div>
+              <h3><a href="#"> Etienne</a></h3>
+              <p>22 mai 2021</p>
+            </div>
+            <p>Super fond d'ecran</p>
+          </div>
+        </div>
+        <div class="commentaire">
+          <img
+            src="./img/artiste/04-52-02-869_250x250.webp"
+            width="50px"
+            alt="user"
+            title="user"
+          />
+          <div>
+            <div>
+              <h3><a href="#"> Etienne</a></h3>
+              <p>22 mai 2021</p>
+            </div>
+            <p>Super fond d'ecran</p>
+          </div>
+        </div>
+        <div class="tags">
+          <a href="#"> Homme </a>
+          <a href="#"> Maquette </a>
+          <a href="#"> Portrait </a>
+          <a href="#"> Nature </a>
+          <a href="#"> Photos </a>
+          <a href="#"> Garcon </a>
+          <a href="#"> Nature </a>
+          <a href="#"> Plein air </a>
+          <a href="#"> Prairie </a>
+          <a href="#"> Prairie </a>
+          <a href="#"> Prairie </a>
+          <a href="#"> Prairie </a>
+          <a href="#"> Prairie </a>
+        </div>
+      </div>
+
+      <div class="creator">
+        <div class="infos">
+          <i class="fas fa-user fa-2x"></i>
+          <div>
+            <p>Temsis/54 images</p>
+            <button class="custom-btn btn-16">Suivre</button>
+            <button class="custom-btn btn-16">Message</button>
+          </div>
+        </div>
+
+        <div class="icones">
+          <p><i class="far fa-thumbs-up"></i> 24</p>
+          <p><i class="far fa-bookmark"></i></p>
+          <p><i class="fas fa-share-alt"></i></p>
+        </div>
+
+        <div class="btn">
+          <button><i class="fas fa-download"></i>Telecharger</button>
+        </div>
+
+        <div class="license">
+          <h3>Pixabay license</h3>
+          <p>
+            Libre pour usage commercial <br />
+            Pas d'attribution requise
+          </p>
+        </div>
+
+        <div class="similar">
+          <h3>Images similaires</h3>
+          <div class="similar-sub">
+            <div>
+              <img
+                src="./img/1.jpg"
+                alt="photo"
+                title="papillon"
+                width="130px"
+              />
+              <img
+                src="./img/1.jpg"
+                alt="photo"
+                title="papillon"
+                width="130px"
+              />
+            </div>
+            <div>
+              <img
+                src="./img/1.jpg"
+                alt="photo"
+                title="papillon"
+                width="130px"
+              />
+              <img
+                src="./img/1.jpg"
+                alt="photo"
+                title="papillon"
+                width="130px"
+              />
+            </div>
+            <div>
+              <img
+                src="./img/1.jpg"
+                alt="photo"
+                title="papillon"
+                width="130px"
+              />
+              <img
+                src="./img/1.jpg"
+                alt="photo"
+                title="papillon"
+                width="130px"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div class="camera">
+          <div>
+            <i class="fas fa-camera"></i>
+            <p>Xiamoi mi 11 ultra</p>
+          </div>
+          <div>
+            <p>image type</p>
+            <p>JPG</p>
+          </div>
+          <div>
+            <p>Resolution</p>
+            <p>5184×3456</p>
+          </div>
+          <div>
+            <p>Cree le</p>
+            <p>5 juillet 2021</p>
+          </div>
+
+          <div>
+            <p>Last updated</p>
+            <p>5 juillet 2021</p>
+          </div>
+          <div>
+            <p>Categories</p>
+            <p><a href="#"> Personnes</a></p>
+          </div>
+          <div>
+            <p>Affichages</p>
+            <p>234</p>
+          </div>
+          <div>
+            <p>Telechargements</p>
+            <p>555</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="medias">
+        <h2>Medias</h2>
+        <p><a href="./index.html"> Photos</a></p>
+        <p><a href="./illustrations.html"> Illustrations</a></p>
+        <p><a href="./vecteur.html"> Vecteurs</a></p>
+      </div>
+      <div class="community">
+        <h2>Communauté</h2>
+        <p><a href="./Communaute/artiste.html"> Artistes</a></p>
+        <p><a href="./Communaute/camera.html"> Appareils photos</a></p>
+      </div>
+      <div class="about">
+        <h2>A propos</h2>
+        <p><a href="./About/faq.html"> Faq</a></p>
+        <p><a href="./About/faq.html"> Conditions d'utilisation</a></p>
+        <p><a href="./About/faq.html"> Confidentialite</a></p>
+      </div>
+    </footer>
+  </body>
+</html>
